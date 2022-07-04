@@ -1,0 +1,110 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using ClassLibrary1;
+
+namespace ClassLibrary1
+{
+    public class Cumpleanos : Fiesta
+    {
+        protected double tamanoTarta;
+        protected string textoTarta;
+
+        public Cumpleanos() { }
+
+        public Cumpleanos(int numPersonas, double costeDecoracion, Boolean decoracionLujo, double costeFijoPersona, double costeTotal, double tamanoTarta, string textoTarta)
+            : base(numPersonas, costeDecoracion, decoracionLujo, costeFijoPersona, costeTotal)
+        {
+            this.tamanoTarta = tamanoTarta;
+            this.textoTarta = textoTarta;
+        }
+
+        public int NumPersonas
+        {
+            get { return numPersonas; }
+            set { numPersonas = value; }
+        }
+
+        public double CosteDecoracion
+        {
+            get { return costeDecoracion; }
+            set { costeDecoracion = value; }
+        }
+
+        public Boolean DecoracionLujo
+        {
+            get { return decoracionLujo; }
+            set { decoracionLujo = value; }
+        }
+
+        public double CosteFijoPersona
+        {
+            get { return costeFijoPersona; }
+            set { costeFijoPersona = value; }
+        }
+
+        public double CosteTotal
+        {
+            get { return costeTotal; }
+            set { costeTotal = value; }
+        }
+
+        public double TamanoTarta
+        {
+            get { return tamanoTarta; }
+            set { tamanoTarta = value; }
+        }
+
+        public string TextoTarta
+        {
+            get { return textoTarta; }
+            set { textoTarta = value; }
+        }
+
+        public override double CalcularCoste()
+        {
+            if (numPersonas > 0)
+            {
+                //HALLO EL COSTE DE DECORACIÓN
+                CalcularCosteDecoracion();
+
+                //HALLO EL COSTE TOTAL.
+                if(numPersonas < 9)
+                {
+                    if(textoTarta.Length < 17)
+                    {
+                        tamanoTarta = 40 + (textoTarta.Length * 0.25);
+                    }
+                    else
+                    {
+                        MessageBox.Show("LA TARTA PEQUEÑA SOLO PUEDE TENER UN MÁXIMO DE 16 LETRAS", "TARTA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                }
+                else
+                {
+                    if (textoTarta.Length < 41)
+                    {
+                        tamanoTarta = 75 + (textoTarta.Length * 0.25);
+                    }
+                    else
+                    {
+                        MessageBox.Show("LA TARTA GRAND SOLO PUEDE TENER UN MÁXIMO DE 40 LETRAS", "TARTA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                }
+                costeTotal = (numPersonas * costeFijoPersona) + costeDecoracion + tamanoTarta;
+            }
+
+            else
+            {
+                costeDecoracion = 0;
+                costeTotal = 0;
+            }
+            return costeTotal;
+        }
+    }
+}
+
+Enviado desde Correo para Windows 10

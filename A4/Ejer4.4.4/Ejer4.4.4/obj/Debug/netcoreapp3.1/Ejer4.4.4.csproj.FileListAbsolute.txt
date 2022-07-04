@@ -1,0 +1,26 @@
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.exe
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.deps.json
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.runtimeconfig.json
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.runtimeconfig.dev.json
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.dll
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.pdb
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.csprojAssemblyReference.cache
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.AssemblyInfoInputs.cache
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.AssemblyInfo.cs
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.dll
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.pdb
+C:\Users\Muhammad Hicho Abde\source\repos\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.genruntimeconfig.cache
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.exe
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.deps.json
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.runtimeconfig.json
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.runtimeconfig.dev.json
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.dll
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\bin\Debug\netcoreapp3.1\Ejer4.4.4.pdb
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.csprojAssemblyReference.cache
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.AssemblyInfoInputs.cache
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.AssemblyInfo.cs
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.dll
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.pdb
+C:\Users\Muhammad Hicho Abde\Desktop\DAW\Entornos de desarollo\Segunda Evaluacion\UD3. Introducción a C#\PRÁCTICA 4.4 Estructuras Básicas\Ejer4.4.4\Ejer4.4.4\obj\Debug\netcoreapp3.1\Ejer4.4.4.genruntimeconfig.cache

@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Collections.ObjectModel;
+using ClassLibrary1;
+
+namespace ClassLibrary1
+{
+    public class Cenas : Fiesta
+    {
+        protected double opcionSaludable;
+        protected double costeBebidaPorPersona;
+
+        public Cenas() { }
+
+        public Cenas(int numPersonas, double costeDecoracion, Boolean decoracionLujo, double costeFijoPersona, double costeTotal, double opcionSaludable, double costeBebidaPorPersona)
+            : base(numPersonas, costeDecoracion, decoracionLujo, costeFijoPersona, costeTotal)
+        {
+            this.opcionSaludable = opcionSaludable;
+            this.costeBebidaPorPersona = costeBebidaPorPersona;
+        }
+
+        public int NumPersonas
+        {
+            get { return numPersonas; }
+            set { numPersonas = value; }
+        }
+
+        public double CosteDecoracion
+        {
+            get { return costeDecoracion; }
+            set { costeDecoracion = value; }
+        }
+
+        public Boolean DecoracionLujo
+        {
+            get { return decoracionLujo; }
+            set { decoracionLujo = value; }
+        }
+
+        public double CosteFijoPersona
+        {
+            get { return costeFijoPersona; }
+            set { costeFijoPersona = value; }
+        }
+
+        public double CosteTotal
+        {
+            get { return costeTotal; }
+            set { costeTotal = value; }
+        }
+
+        public double OpcionSaludable
+        {
+            get { return opcionSaludable; }
+            set { opcionSaludable = value; }
+        }
+
+        public double CosteBebidaPorPersona
+        {
+            get { return costeBebidaPorPersona; }
+            set { costeBebidaPorPersona = value; }
+        }
+
+        public double EstableceOpcionSaludable()
+        {
+            CalcularCosteDecoracion();
+            opcionSaludable = (numPersonas * (costeFijoPersona + 5)) + costeDecoracion;
+            opcionSaludable *= 1.05;
+            return opcionSaludable;
+        }
+
+        public override double CalcularCoste()
+        {
+            if (numPersonas > 0)
+            {
+                //HALLO EL COSTE DE DECORACIÓN
+                CalcularCosteDecoracion();
+
+                //HALLO EL COSTE TOTAL.
+                    costeTotal = (numPersonas * (costeFijoPersona + 20)) + costeDecoracion;
+            }
+
+            else
+            {
+                costeDecoracion = 0;
+                costeTotal = 0;
+            }
+            return costeTotal;
+        }
+    }
+}
+
+Enviado desde Correo para Windows 10

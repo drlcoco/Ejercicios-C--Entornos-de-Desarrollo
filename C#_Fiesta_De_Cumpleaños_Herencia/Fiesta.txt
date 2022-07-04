@@ -1,0 +1,102 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Input;
+using static System.Windows.Forms.DataFormats;
+using ClassLibrary1;
+using System.ComponentModel;
+
+namespace ClassLibrary1
+{
+    public class Fiesta
+    {
+        protected int numPersonas;
+        protected double costeDecoracion;
+        protected Boolean decoracionLujo;
+        protected double costeFijoPersona = 25;
+        protected double costeTotal;
+
+        public Fiesta() { }
+
+        public Fiesta(int numPersonas, double costeDecoracion, Boolean decoracionLujo, double costeFijoPersona, double costeTotal)
+        {
+            this.numPersonas = numPersonas;
+            this.costeDecoracion = costeDecoracion;
+            this.decoracionLujo = decoracionLujo;
+            this.costeFijoPersona = costeFijoPersona;
+            this.costeTotal = costeTotal;
+        }
+
+        public int NumPersonas
+        {
+            get { return numPersonas; }
+            set { numPersonas = value; }
+        }
+
+        public double CosteDecoracion
+        {
+            get { return costeDecoracion; }
+            set { costeDecoracion = value; }
+        }
+
+        public Boolean DecoracionLujo
+        {
+            get { return decoracionLujo; }
+            set { decoracionLujo = value; }
+        }
+
+        public double CosteFijoPersona
+        {
+            get { return costeFijoPersona; }
+            set { costeFijoPersona = value; }
+        }
+
+        public double CosteTotal
+        {
+            get { return costeTotal; }
+            set { costeTotal = value; }
+        }
+
+        public virtual double CalcularCosteDecoracion()
+        {
+            if (numPersonas > 0)
+            {
+                if (decoracionLujo == true)
+                {
+                    costeDecoracion = (numPersonas * 15) + 50;
+                }
+                else
+                {
+                    costeDecoracion = (numPersonas * 7.5) + 30;
+                }
+            }
+
+            else
+            {
+                costeDecoracion = 0;
+            }
+            return costeDecoracion;
+        }
+
+        public virtual double CalcularCoste()
+        {
+            if (numPersonas > 0)
+            {
+                costeTotal = (numPersonas * costeFijoPersona) + costeDecoracion;
+                //txb_costeCena.Text = Convert.ToString(costeTotal);
+            }
+
+            else
+            {
+                costeTotal = 0;
+                //txb_costeCena.Text = Convert.ToString(costeTotal);
+            }
+            return costeTotal;
+        }
+    }
+}
+
+Enviado desde Correo para Windows 10

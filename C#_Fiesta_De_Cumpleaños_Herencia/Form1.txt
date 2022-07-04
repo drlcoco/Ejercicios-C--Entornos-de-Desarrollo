@@ -1,0 +1,94 @@
+using ClassLibrary1;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Ejercicio25_Herencia_David_De_Los_Reyes_Luque
+{
+    public partial class Form1 : Form
+    {
+        Fiesta fiesta = new Fiesta();
+        Cenas cenas = new Cenas(0, 0.0, false, 25, 0, 0.0, 0.0);
+        Cumpleanos cumple = new Cumpleanos(0, 0.0, false, 25, 0.0, 0, "");
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void nud_personCenas_ValueChanged_1(object sender, EventArgs e)
+        {
+            cenas.NumPersonas = (int)nud_personCenas.Value;
+
+            if (cbx_decoCenas.Checked)
+            {
+                cenas.DecoracionLujo = true;
+                cenas.CalcularCosteDecoracion();
+                cenas.CalcularCoste();
+                txb_costeCena.Text = Convert.ToString(cenas.CosteTotal);
+            }
+            else
+            {
+                cenas.DecoracionLujo = false;
+                cenas.CalcularCosteDecoracion();
+                cenas.CalcularCoste();
+                txb_costeCena.Text = Convert.ToString(cenas.CosteTotal);
+            }
+            if (cbx_saludable.Checked)
+            {
+                cenas.EstableceOpcionSaludable();
+                txb_costeCena.Text = Convert.ToString(cenas.OpcionSaludable);
+            }
+            else
+            {
+                cenas.CalcularCoste();
+                txb_costeCena.Text = Convert.ToString(cenas.CosteTotal);
+            }
+
+        }
+
+        private void cbx_decoCenas_CheckedChanged_1(object sender, EventArgs e)
+        {
+            cenas.DecoracionLujo = true;
+        }
+
+        private void cbx_saludable_CheckedChanged_1(object sender, EventArgs e)
+        {
+            cenas.EstableceOpcionSaludable();
+
+        }
+
+        private void nud_personCumple_ValueChanged_1(object sender, EventArgs e)
+        {
+            cumple.NumPersonas = (int)nud_personCumple.Value;
+            cumple.TextoTarta = txb_tarta.Text;
+            if (cbx_decoCumple.Checked)
+            {
+                cumple.DecoracionLujo = true;
+                cumple.CalcularCosteDecoracion();
+               cumple.CalcularCoste();
+                txb_costeCumple.Text = Convert.ToString(cumple.CosteTotal);
+            }
+            else
+            {
+                cumple.DecoracionLujo = false;
+                cumple.CalcularCosteDecoracion();
+                cumple.CalcularCoste();
+                txb_costeCumple.Text = Convert.ToString(cumple.CosteTotal);
+            }
+        }
+
+        private void cbx_decoCumple_CheckedChanged(object sender, EventArgs e)
+        {
+            cumple.DecoracionLujo = true;
+        }
+    }
+}
+
+Enviado desde Correo para Windows 10
